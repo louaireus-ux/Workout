@@ -320,6 +320,7 @@ const ANATOMY={"front":[{"mus":"chest","pts":["51.8367347 41.6326531 51.0204082 
 
 /* ---------------- memory ---------------- */
 const STORE_KEY='wazeer.readiness.v1';
+const BUILD='2026-08-27 · v2';
 let storageOk=(function(){try{localStorage.setItem('__rb_probe','1');localStorage.removeItem('__rb_probe');return true;}catch(e){return false;}})();
 let lastSaved=null,saveTimer=null,toastT=null;
 
@@ -605,6 +606,7 @@ function renderGear(){
   h+='<p>Everything lives in this browser. Export a backup before you clear site data, switch phones, or reinstall — then import it on the other device to carry the whole log across.</p>';
   h+='<div class="datarow"><button class="btn btn-ghost" data-action="export">Export backup</button><button class="btn btn-ghost" data-action="import">Import backup</button></div>';
   h+='<div class="datastat"><b>'+st.total+'</b> sessions on record · <b>'+cardio.length+'</b> cardio · '+(lastSaved?('last saved '+fmtDate(today())+' '+new Date(lastSaved).toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit'})):'not saved yet')+'</div>';
+  h+='<div class="datastat">Build <b>'+esc(BUILD)+'</b> · pull down to refresh if this looks old</div>';
   h+='<div class="datarow" style="margin-top:14px"><button class="btn btn-ghost" data-action="wipe" style="color:var(--danger)">Erase everything</button></div>';
   h+='</div>';
   document.getElementById('content').innerHTML=h;
