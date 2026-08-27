@@ -1,17 +1,22 @@
-# Readiness Board
+# Workout Board
 
-A training log you install on your phone's home screen. Static files only — no server,
+A workout log you install on your phone's home screen. Static files only — no server,
 no build step, no account. Everything is saved in the browser as you type.
 
 Live at **https://lively-duckanoo-37ca31.netlify.app** — pushes to `main` deploy automatically.
 
 ## What it does
 
-- **Muscle heatmap** — every logged set heats the muscles it works, then decays back to
+- **Muscle heatmap** — everything you log heats the muscles it works, then decays back to
   cold over 8 days. Tap a muscle for drills filtered to the equipment you own.
 - **Aerobic engine** — run and bike sessions feed a separate gauge that decays over 12 days.
-- **A / B / C strength days** — squat focus, hinge focus, legs + arms. Warm-up tick,
-  per-set weight and reps, favourite star, and the plan itself is editable.
+- **Your workouts, your structure** — starts with three full-body days, but rename them,
+  reorder them, add more, delete them. Tabs are whatever you call them.
+- **Tick to log** — tap the circle and the exercise counts as done at its planned sets.
+  Weight and reps are there under "Add weight and reps" when you want them, out of the
+  way when you do not.
+- **Add exercises from a searchable library** — filtered to your equipment, and it brings
+  the sets, reps and muscle map with it. Or type any name and add it as your own.
 - **Cardio log**, **history**, **equipment loadout**, **operator status** (rank, level,
   weekly ops against a target of 4).
 - **Coach** — reads the live board (coldest muscles, what is still recovering, which day

@@ -1,7 +1,7 @@
 /* Readiness Board offline cache.
    Bump VERSION whenever index.html changes, or returning visitors keep the old
    copy for one extra load. */
-const VERSION = 'readiness-v2';
+const VERSION = 'workout-v3';
 const CORE = ['./', './index.html', './manifest.webmanifest',
               './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
