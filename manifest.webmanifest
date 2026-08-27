@@ -1,0 +1,16 @@
+{
+  "name": "Readiness Board",
+  "short_name": "Readiness",
+  "description": "Muscle heatmap training log. Logged sets heat the muscles they work, then fade back to cold.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#151A17",
+  "theme_color": "#151A17",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

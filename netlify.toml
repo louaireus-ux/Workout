@@ -1,0 +1,21 @@
+# Static site — nothing to build, publish the repo root as-is.
+[build]
+  publish = "."
+  command = ""
+
+# The service worker and the page itself must always be revalidated, or a
+# CDN or browser cache holds the old copy and updates take days to land.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

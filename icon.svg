@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="heat" gradientUnits="userSpaceOnUse" x1="0" y1="80" x2="0" y2="425">
+      <stop offset="0" stop-color="#8FD65C"/>
+      <stop offset="0.42" stop-color="#79C64C"/>
+      <stop offset="0.74" stop-color="#CE942E"/>
+      <stop offset="1" stop-color="#D65A3A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.14" r="0.8">
+      <stop offset="0" stop-color="#79C64C" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#79C64C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="#151A17"/>
+  <rect width="512" height="512" fill="url(#glow)"/>
+
+  <!-- head -->
+  <circle cx="256" cy="118" r="42" fill="url(#heat)"/>
+
+  <!-- left deltoid -->
+  <path fill="url(#heat)" d="M150,206 C118,222 104,254 108,290 C110,312 120,330 134,340
+    L164,270 C168,244 162,222 150,206 Z"/>
+  <!-- right deltoid -->
+  <path fill="url(#heat)" d="M362,206 C394,222 408,254 404,290 C402,312 392,330 378,340
+    L348,270 C344,244 350,222 362,206 Z"/>
+
+  <!-- trunk: wide traps, armpit notch, V-taper to waist -->
+  <path fill="url(#heat)" d="
+    M256,176
+    C296,176 334,190 352,214
+    C362,244 358,278 344,308
+    C330,344 322,380 318,414
+    L194,414
+    C190,380 182,344 168,308
+    C154,278 150,244 160,214
+    C178,190 216,176 256,176 Z"/>
+
+  <!-- chalk separations -->
+  <path d="M256,196 L256,404" stroke="#151A17" stroke-width="15" stroke-linecap="round" opacity="0.6"/>
+  <path d="M180,268 L332,268" stroke="#151A17" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
+  <path d="M190,340 L322,340" stroke="#151A17" stroke-width="12" stroke-linecap="round" opacity="0.4"/>
+</svg>
